@@ -39,4 +39,23 @@
         android:text="获取验证码"
         android:id="@+id/tv1"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:text="网络状态"
+        android:id="@+id/tv2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取sim卡号码"
+        android:id="@+id/button5"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取dimen大小"
+        android:id="@+id/button6"/>
+
 </LinearLayout>

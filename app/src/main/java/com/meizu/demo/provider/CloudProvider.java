@@ -33,6 +33,7 @@ public class CloudProvider extends ContentProvider {
 
     @Override
     public boolean onCreate() {
+        Log.d(TAG, "[onCreate]");
         providers = new ArrayList<>();
         ContactPresenceProvider.registerProvider(this);
         CommonProvider.registerProvider(this);

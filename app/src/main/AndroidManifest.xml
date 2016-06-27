@@ -2,13 +2,19 @@
 <manifest package="com.meizu.demo"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:process="com.meizu.cloud">
+        android:theme="@style/AppTheme">
         <activity
             android:name="com.meizu.demo.ui.MainActivity"
             android:label="@string/app_name"
@@ -47,8 +53,7 @@
             android:name="com.meizu.demo.ui.Main2Activity"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar"
-            android:taskAffinity="com.meizu.cloud"
-            android:process="com.meizu.cloud">
+            android:taskAffinity="com.meizu.cloud">
         </activity>
     </application>
 

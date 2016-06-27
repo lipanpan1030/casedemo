@@ -21,7 +21,7 @@ public class CloudDBHelper extends SQLiteOpenHelper {
 
     private final String TAG = CloudDBHelper.class.getSimpleName();
     // 数据库名
-    private static final String DB_NAME = "test.db";
+    private static final String DB_NAME = "cloud.db";
 
     // 数据库版本
     private static final int VERSION = 3;
@@ -33,6 +33,7 @@ public class CloudDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        Log.d(TAG, "[onCreate]");
         TableCommonColumn.CREATE_TABLE.create(db);
         TablePresenceColumn.CREATE_TABLE.create(db);
         TableSubscribeColumn.CREATE_TABLE.create(db);
